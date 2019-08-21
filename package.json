@@ -1,0 +1,33 @@
+{
+  "name": "parking-tracker-node-backend",
+  "version": "1.0.0",
+  "description": "An app to log and remeber where you parked, and to save favorite spots.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node --presets env", 
+    "release": "npm run clean && npm run build && npm run serve", 
+    "clean": "rm -rf dist && mkdir dist", 
+    "build": "babel . -s -D -d dist --presets env --ignore node_modules", 
+    "serve": "node dist/server.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christy-inman/parking-tracker-node-backend.git"
+  },
+  "author": "Christy Inman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christy-inman/parking-tracker-node-backend/issues"
+  },
+  "homepage": "https://github.com/christy-inman/parking-tracker-node-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.1"
+  }
+}
