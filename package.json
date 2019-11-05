@@ -23,7 +23,7 @@
   "homepage": "https://github.com/christy-inman/parking-tracker-node-backend#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.6.9"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
